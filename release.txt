@@ -1,0 +1,15 @@
+237大佬immortalwrt源码
+immortalwrt（闭源MTK驱动）
+旁路由模式，无密登录
+默认网关：192.168.150.1
+编译插件：
+luci-app-firewall 
+luci-app-mtwifi-cfg 
+luci-app-nikki
+luci-app-opkg 
+luci-app-passwall
+luci-app-ttyd 
+luci-app-turboacc-mtk 
+luci-app-upnp-mtk-adjust 
+luci-theme-argon 
+luci-theme-bootstrap 
