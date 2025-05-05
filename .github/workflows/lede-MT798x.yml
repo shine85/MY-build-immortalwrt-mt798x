@@ -2,7 +2,7 @@
 # 描述：使用 GitHub Actions 构建 OpenWrt
 #
 
-name: 构建-23.05-immortalwrt-MT798x # 工作流名称
+name: 构建-lede-MT798x # 工作流名称
 
 on:
   repository_dispatch: 				# 仓库分派事件触发
@@ -25,12 +25,12 @@ on:
 #    - cron: 0 8 * * 5 # 定时触发（每周五8点，已注释）
 
 env:
-  REPO_URL: https://github.com/immortalwrt/immortalwrt # 仓库地址
-  REPO_BRANCH: openwrt-23.05 # 分支名称
-  DEVICE_NAME: 360t7-Im # 设备名称
+  REPO_URL: https://github.com/coolsnowwolf/lede # 仓库地址
+  REPO_BRANCH: master # 分支名称
+  DEVICE_NAME: 360t7 # 设备名称
   FILES: immortalwrt/files # 自定义文件目录
   FEEDS_CONF: immortalwrt/feeds.conf.default # 软件源配置文件
-  CONFIG_FILE: immortalwrt/360t7-2305-immortalwrt-798x.config # 自定义配置文件
+  CONFIG_FILE: immortalwrt/360t7lede-798x.config # 自定义配置文件
   DIY_P1_SH: immortalwrt/diy-part1-798x.sh # 自定义脚本1
   DIY_P2_SH: immortalwrt/diy-part2-798x.sh # 自定义脚本2
   UPLOAD_BIN_DIR: false # 是否上传bin目录

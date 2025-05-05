@@ -56,6 +56,14 @@ git clone https://github.com/xiaorouji/openwrt-passwall2 package/luci-app-passwa
 rm -rf feeds/luci/applications/luci-app-nikki
 git clone https://github.com/nikkinikki-org/OpenWrt-nikki package/luci-app-nikki
 
+# homeproxy
+rm -rf feeds/luci/applications/luci-app-homeproxy
+git clone https://github.com/immortalwrt/homeproxy package/luci-app-homeproxy
+
+# luci-app-turboacc
+rm -rf feeds/luci/applications/luci-app-turboacc
+git clone https://github.com/chenmozhijin/turboacc package/luci-app-turboacc
+
 # 优化socat中英翻译
 sed -i 's/仅IPv6/仅 IPv6/g' package/feeds/luci/luci-app-socat/po/zh_Hans/socat.po
 
@@ -72,8 +80,9 @@ git clone https://github.com/sirpdboy/luci-app-lucky package/lucky-packages
 
 # 添加主题
 rm -rf feeds/luci/themes/luci-theme-argon
-# git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
-merge_package openwrt-24.10 https://github.com/sbwml/luci-theme-argon package luci-theme-argon
+git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+# merge_package openwrt-23.05 https://github.com/sbwml/luci-theme-argon package luci-theme-argon
+# merge_package openwrt-24.10 https://github.com/sbwml/luci-theme-argon package luci-theme-argon
 git clone --depth=1 -b js https://github.com/sirpdboy/luci-theme-kucat package/luci-theme-kucat
 git clone --depth=1 -b main https://github.com/sirpdboy/luci-app-advancedplus  package/luci-app-advancedplus
 # 取消自添加主题的默认设置
@@ -156,7 +165,8 @@ git clone --depth=1 https://github.com/sbwml/packages_lang_golang feeds/packages
 # luci-app-filemanager
 rm -rf feeds/luci/applications/luci-app-filemanager
 git clone https://github.com/sbwml/luci-app-filemanager package/luci-app-filemanager
- 
+
+
 # nghttp3
 # rm -rf feeds/packages/libs/nghttp3
 # git clone https://github.com/sbwml/package_libs_nghttp3 feeds/packages/libs/nghttp3

@@ -4,7 +4,7 @@
 
 # 克隆插件
 git clone https://github.com/nikkinikki-org/OpenWrt-nikki package/Nikki
-git clone https://github.com/281677160/luci-app-autoupdate package/autoupdate
+
 
 # 创建 UCI 默认配置文件目录
 mkdir -p package/base-files/files/etc/uci-defaults

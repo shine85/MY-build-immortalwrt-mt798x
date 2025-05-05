@@ -20,6 +20,8 @@ echo "========================="
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 sed -i '1i src-git kenzo https://github.com/redfrog999/openwrt-packages' feeds.conf.default
 sed -i '$a src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main' feeds.conf.default
+sed -i '$a src-git homeproxy https://github.com/immortalwrt/homeproxy.git;main' >> feeds.conf.default
+
 # sed -i '$a src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main' feeds.conf.default
 # sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
 # sed -i '$a src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main' feeds.conf.default
