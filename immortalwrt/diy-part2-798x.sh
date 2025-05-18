@@ -14,7 +14,7 @@ mkdir -p package/base-files/files/etc/uci-defaults
 # 后台IP设置
 Ipv4_ipaddr="192.168.150.2"            # 修改openwrt后台地址
 Netmask_netm="255.255.255.0"           # IPv4 子网掩码
-Op_name="༄ 目目+࿐"                   # 修改主机名称
+Op_name="shine"                   # 修改主机名称
 echo "CONFIG_IPV4_ADDR=\"$Ipv4_ipaddr\"" >> .config
 echo "CONFIG_NETMASK_NETM=\"$Netmask_netm\"" >> .config
 echo "CONFIG_OP_NAME=\"$Op_name\"" >> .config
