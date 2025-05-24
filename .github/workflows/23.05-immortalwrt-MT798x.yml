@@ -30,7 +30,7 @@ env:
   DEVICE_NAME: 360t7-Im # 设备名称
   FILES: immortalwrt/files # 自定义文件目录
   FEEDS_CONF: immortalwrt/feeds.conf.default # 软件源配置文件
-  CONFIG_FILE: immortalwrt/360t7-2305-immortalwrt-798x.config # 自定义配置文件
+  CONFIG_FILE: immortalwrt/t7 # 自定义配置文件
   DIY_P1_SH: immortalwrt/diy-part1-798x.sh # 自定义脚本1
   DIY_P2_SH: immortalwrt/diy-part2-798x.sh # 自定义脚本2
   UPLOAD_BIN_DIR: false # 是否上传bin目录
