@@ -26,7 +26,7 @@ on:
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt # 仓库地址
-  REPO_BRANCH: openwrt-23.05 # 分支名称
+  REPO_BRANCH: openwrt-24.10 # 分支名称
   DEVICE_NAME: 360t7-Im # 设备名称
   FILES: immortalwrt/files # 自定义文件目录
   FEEDS_CONF: immortalwrt/feeds.conf.default # 软件源配置文件
